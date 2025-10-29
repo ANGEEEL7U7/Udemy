@@ -1,0 +1,16 @@
+graph TD
+
+    %% Nodos
+    A[Trabajando]
+    B["IF(5:30 <= hora actual)"]
+    C[Salir del trabajo]
+    D[Seguir trabajando]
+    E[Seguir con mi vida]
+    F[Fin del dia]
+
+    A --> B
+    B -->|Verdad| C
+    B -->|Falso| D
+    C --> E
+    D --> E
+    E --> F

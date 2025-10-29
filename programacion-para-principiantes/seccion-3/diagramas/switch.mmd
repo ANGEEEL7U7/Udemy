@@ -1,0 +1,32 @@
+graph TD
+    %%Ejemplo de switch
+    %% Nodos
+    A[Inicio mi dia]
+    B{"switch(dia de la semana)"}
+        C["Lunes"]
+            D["salir a correr"]
+        E["Martes"]
+            F["ir al super mercado"]
+        G["Miercoles"]
+            H["ir al parque"]
+        I["Jueves"]
+            J["ir al cine"]
+        K["Viernes"]
+            L["ir a cenar"]
+        M["Sabado"]
+            N["ir a la playa"]
+        O["Domingo"]
+            P["quedarse en casa"]
+        Q[Ese dia de la semana no existe]
+    R[Seguir con mi vida]
+
+    %% Conexiones
+    A --> B 
+    B -->|1| C --> |Hacer| D --> R
+    B -->|2| E --> |Hacer| F --> R
+    B -->|3| G --> |Hacer| H --> R
+    B -->|4| I --> |Hacer| J --> R
+    B -->|5| K --> |Hacer| L --> R
+    B -->|6| M --> |Hacer| N --> R
+    B -->|7| O --> |Hacer| P --> R
+    B -->|default| Q
