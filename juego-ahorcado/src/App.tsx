@@ -1,10 +1,10 @@
 
 import { useEffect, useState } from 'react'
 import './App.css'
-import ImagenesIntetos from './helpers/ImagenesIntentos'
+import ImagenesIntetos from './components/ImagenesIntentos'
 
 import palabras from './helpers/palabras'
-import BotonesComponent from './helpers/Botones';
+import BotonesComponent from './components/Botones';
 const palabra: string = palabras[
   Math.floor(Math.random() * (palabras.length - 0) + 0)
 ];

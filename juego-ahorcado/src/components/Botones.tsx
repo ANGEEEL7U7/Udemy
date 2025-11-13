@@ -1,5 +1,5 @@
 import { Component, type ReactNode } from "react";
-import letras from "./letters";
+import letras from "../helpers/letters";
 interface BotonesProp {
     estadoJuego: number,
     clickLetra: (letra: string) => void,
