@@ -6,7 +6,7 @@ interface BotonesProp {
     reiniciar: () => void
 }
 
-export default class BotonesComponent extends Component<BotonesProp> {
+export default class Botones extends Component<BotonesProp> {
     letras: string[];
 
     constructor(props: BotonesProp) {
@@ -25,14 +25,14 @@ export default class BotonesComponent extends Component<BotonesProp> {
     botonPerdedor(): ReactNode {
         return <button
             type='button'
-            className='mt-3 btn btn-danger align-self-start mx-auto'
+            className='btn btn-danger align-self-start mx-md-0 mx-auto'
             onClick={this.props.reiniciar}>Reiniciar juego</button>
     }
 
     botonGanador(): ReactNode {
         return <button
             type='button'
-            className='mt-3 btn btn-success align-self-start mx-auto'
+            className='btn btn-success align-self-start mx-md-0 mx-auto'
             onClick={this.props.reiniciar}>Volver a juegar</button>
     }
 
@@ -45,7 +45,7 @@ export default class BotonesComponent extends Component<BotonesProp> {
                 className='btn btn-outline-primary'>{letra}</button>
         );
 
-        return <div className='d-flex flex-wrap gap-2 mx-auto justify-content-center'>{botones}</div>;
+        return <div className='d-flex flex-wrap gap-2'>{botones}</div>;
     }
 
 
